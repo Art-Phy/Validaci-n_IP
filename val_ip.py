@@ -13,4 +13,12 @@ def validar_ip(direccion_ip):
             print(f"{direccion_ip} es una IP pública válida ({ip.version}).")
     except ValueError:
         print(f"{direccion_ip} no es una IP válida.")
-    
+
+# añadimos otra función que recibe una subred en CIDR
+# intenta crear un objeto de red, si no es válido lanza excepción   
+def validar_subred(direccion_subred):
+    try:
+        red = ipaddress.ip_network(direccion_subred, strict=False)
+        print(f"{direccion_subred} es una subred válida.")
+    except ValueError:
+        print(f"{direccion_subred} no es una subred válida.")
