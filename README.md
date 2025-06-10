@@ -1,6 +1,6 @@
 ## Bienvenid@s a Tu Validación de IP
 
-#### Es un progama simple para practicar Python, para Princpiantes, pero es un programa que nos puede servir en nuestro día a día. Siempre podremos chequear una dirección IP al conectarnos a ella, para cerciorarnos de que es una red segura.
+#### Con el progeama podremos chequear una dirección IP al conectarnos a ella para cerciorarnos de que es una red segura.
 
 #### Aunque nos pueda servir de seguridad al conectarnos a una red que no es la nuestra habitual, yo recomiendo siempre no conectarse a redes desconocidas, incluídas las de aviones o cafeterías, y menos aún si son abiertas. Es muy fácil suplantar una red wifi con nombres similares a la original y al conectarnos, ofreceremos todos nuestros datos en bandeja.
 
