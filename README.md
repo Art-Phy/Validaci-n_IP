@@ -1,4 +1,4 @@
-## Bienvenid@s a Tu Validación de IP
+### Bienvenid@s a Tu Validación de IP
 
 ##### **El progeama puese chequear una dirección IP al conectarse a ella**
 
@@ -17,5 +17,5 @@
  - Documentación Markdown [Markdown](https://markdown.es)
 
 ---
-> [!TIP]
+> [!IMPORTANT]
 > ###### Si consideras útil el repositorio, apóyalo haciendo "★ Star" ¡Gracias!
