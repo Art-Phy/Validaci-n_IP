@@ -1,11 +1,22 @@
 ### Bienvenid@s a Tu Validación de IP
 
-##### **El progeama puese chequear una dirección IP al conectarse a ella**
+##### **El programa puede chequear si una dirección IP o subred es válida y clasificarla como pública o privada.**
 > [!NOTE]
-> ##### ✨ Aunque nos pueda servir de seguridad al conectarnos a una red que no es la nuestra habitual, es recomendable siempre no conectarse a redes desconocidas, incluídas las de aviones o cafeterías, y menos aún si son abiertas. Es muy fácil suplantar una red wifi con nombres similares a la original y al conectarnos, ofreceremos todos nuestros datos en bandeja.
+> ##### ✨ Esta herramienta es útil para aprender cómo funcionan las IPs y subredes. Aunque podamos usarla como referencia antes de conectarnos a una red desconocida, es recomendable **nunca conectarse a redes no confiables**, incluidas cafeterías, aviones o redes abiertas. Es muy fácil suplantar una red wifi con nombres similares a la original, y al conectarnos, estaríamos ofreciendo información sensible.
 
 > [!WARNING]
-> ###### En el caso de que sea totalmente necesario, es mejor hacerlo a través de una VPN y solamente en las web https y no hacer logging de cuentas personales.
+> ###### En caso de extrema necesidad, usar siempre una **VPN**, asegurarse de que la web sea **HTTPS**, y evitar introducir credenciales personales.
+
+---
+
+#### 🧩 Funciones del programa
+
+- ✔️ Validar direcciones IP (IPv4 e IPv6)  
+- ✔️ Identificar si una IP es **privada** o **pública**  
+- ✔️ Validar subredes en formato **CIDR**  
+- ✔️ Funcionamiento mediante **menú interactivo** o **argumentos CLI**  
+- ✔️ Colores en terminal para mejor lectura (gracias a `colorama`)  
+
 
 #### 📋 Qué he usado
 

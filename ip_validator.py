@@ -82,7 +82,7 @@ def menu() -> None:
         elif option == "2":
             direc_subred = input("Introduce la subred (CIDR, ej: 192.168.1.0/24): ").strip()
             validar_subred(direc_subred)
-        elif option == 3:
+        elif option == "3":
             print("👋 ¡Hasta la próxima!")
             break
         else:
@@ -96,4 +96,31 @@ def parse_args() -> argparse.Namespace:
     Returns:
         argparse.Namespace con los parámetros parseados.
     """
+    parser = argparse.ArgumentParser(
+        description="Valida direcciones IP o subredes (CIDR). Puede usarse de forma interactiva o por argumentos."
+    )
+    parser.add_argument("--ip", type=str, help="Dirección IP a validar (ej: 8.8.8.8)")
+    parser.add_argument("--subnet", type=str, help="Subred CIDR a validar (ej: 192.168.1.0/24)")
+    return parser.parse_args()
 
+
+def main() -> None:
+    """
+    Punto de entrada principal. Decide si usar modo CLI o interactivo.
+    """
+    args = parse_args()
+
+    # Si se proporcionan argumentos, ejecutar modo directo
+    if args.ip:
+        validar_ip(args.ip)
+        sys.exit(0)
+    elif args.subnet:
+        validar_subred(args.subnet)
+        sys.exit(0)
+    else:
+        print(f"{Fore.CYAN}🧩 No se proporcionan argumentos. Entrando en modo interactivo...{Style.RESET_ALL}")
+        menu()
+
+
+if __name__ == "__main__":
+    main()
